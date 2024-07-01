@@ -1,0 +1,89 @@
+#package-modal-wrapper {
+    width: 60vw;
+    /* background-color: var(--primary); */
+    color: white;
+    /* overflow-y: scroll; */
+}
+
+.ReactModal__Content {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 42px -2px rgba(0, 0, 0, 0.75);}
+
+#package-modal-wrapper h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#package-modal-picture-wrapper {
+    width: 40vw;
+    height: 30vh;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+#package-modal-wrapper p {
+    width: 45vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+#package-modal-wrapper h3 {
+    text-align: center;
+}
+
+#package-modal-wrapper ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+#package-modal-wrapper button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.4em;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    transition: all .4s;
+}
+
+#package-modal-wrapper button:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #package-modal-wrapper {
+        width: 90vw;
+    }
+
+    #package-modal-picture-wrapper {
+        width: 85vw;
+    }
+
+    #package-modal-wrapper p {
+        width: 85vw;
+    }
+  }

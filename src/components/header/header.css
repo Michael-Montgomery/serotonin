@@ -1,0 +1,140 @@
+header {
+    background-color: white;
+    transition: all .4s;
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    text-align: center;
+    line-height: 70px;
+}
+
+header nav img {
+    height: 55px;
+    width: 55px;
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    /* color: #624ADC;
+     */
+     color: white;
+    margin: 0 4vw;
+    padding: 0;
+    transition: all .5s;
+}
+
+header nav a.active {
+    background-color: white;
+    color: #624ADC;
+    border-bottom: 1px solid #624ADC;
+}
+
+header nav a:hover:not(.active) {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 7px 0;
+}
+
+.responsive-menu-btn {
+    display: none;
+}
+
+#shop-header {
+    background-color: var(--primary);
+    margin-top: 0;
+    border-top: 1px solid white;
+    transition: all .4s;
+}
+
+#shop-header ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#shop-header ul li {
+    display: inline;
+}
+
+#shop-header ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5vw;
+    font-size: 1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .responsive-menu-btn {
+        display: block;
+    }
+
+    header {
+        
+    }
+    header nav a {
+        display: none;
+    }
+
+    .responsive-menu-btn {
+        float: right;
+        font-size: 1.5em;
+        background-color: transparent;
+        color: white;
+        border: none;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    #responsive-menu-wrapper {
+        padding-top: 65px;
+    }
+
+    #responsive-menu-wrapper ul {
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #responsive-menu-wrapper ul li {
+        margin-top: 15px;
+    }
+    
+    #responsive-menu-wrapper ul li a {
+        font-size: 1.6em;
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    #mobile-shop-wrapper dl {
+        position: relative;
+        left: 30px;
+    }
+
+    #mobile-shop-wrapper dd {
+        font-size: .8em;
+    }
+
+    #mobile-shop-wrapper dl dt {
+        color: #ffbf00
+    }
+
+  }
