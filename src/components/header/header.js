@@ -22,11 +22,11 @@ function Header(props) {
        <>
         <header style={{ height: responsiveHeaderExpanded ? '500px' : '70px', backgroundColor:  props.color ? props.color : '#2D75E0'}}>
             <nav>
-                <NavLink to='/' style={{color: props.color ? 'white' : 'black'}}>Home</NavLink>
-                <Link onMouseEnter={handleShopMenu} style={{color: props.color ? 'white' : 'black'}}>Shop</Link>
+                <NavLink to='/'>Home</NavLink>
+                <Link onMouseEnter={handleShopMenu}>Shop</Link>
                 <img alt='logo' src='https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1719705600&semt=sph'></img>
-                <NavLink to='/contact' style={{color: props.color ? 'white' : 'black'}}>Contact</NavLink>
-                <NavLink to='/about' style={{color: props.color ? 'white' : 'black'}}>About</NavLink>
+                <NavLink to='/contact'>Contact</NavLink>
+                <NavLink to='/about'>About</NavLink>
                 {
                     responsiveHeaderExpanded ? <button className='responsive-menu-btn' onClick={handleResponsiveClick}><FontAwesomeIcon icon={faClose}></FontAwesomeIcon></button> : <button className='responsive-menu-btn' onClick={handleResponsiveClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
                 }

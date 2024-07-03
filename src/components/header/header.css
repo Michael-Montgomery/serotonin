@@ -21,16 +21,15 @@ header nav a {
     font-size: 1.5em;
     /* color: #624ADC;
      */
-     color: black;
+     color: white;
     margin: 0 4vw;
     padding: 0;
     transition: all .5s;
 }
 
 header nav a.active {
-    background-color: white;
-    color: #624ADC;
-    border-bottom: 1px solid #624ADC;
+    border-bottom: 1px solid white;
+    padding-bottom: 7px;
 }
 
 header nav a:hover:not(.active) {
@@ -48,6 +47,8 @@ header nav a:hover:not(.active) {
     margin-top: 0;
     border-top: 1px solid white;
     transition: all .4s;
+    position: sticky;
+    top: 70px;
 }
 
 #shop-header ul {

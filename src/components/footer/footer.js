@@ -4,11 +4,11 @@ function Footer(props){
     return(
         <div id='footer-wrapper' style={{backgroundColor: props.color ? props.color : '#2D75E0'}}>
             <ul>
-                <li><a href='http://www.apple.com' style={{color: props.color ? 'white' : 'black'}}>Support</a></li>
-                <li><a href='http://www.apple.com' style={{color: props.color ? 'white' : 'black'}}>Chakras Information</a></li>
-                <li><a href='http://www.apple.com' style={{color: props.color ? 'white' : 'black'}}>Privacy Policy</a></li>
-                <li><a href='http://www.apple.com' style={{color: props.color ? 'white' : 'black'}}>Cookies Policy</a></li>
-                <li><a href='http://www.apple.com' style={{color: props.color ? 'white' : 'black'}}>Sales & Refunds</a></li>
+                <li><a href='http://www.apple.com'>Support</a></li>
+                <li><a href='http://www.apple.com'>Chakras Information</a></li>
+                <li><a href='http://www.apple.com' >Privacy Policy</a></li>
+                <li><a href='http://www.apple.com' >Cookies Policy</a></li>
+                <li><a href='http://www.apple.com' >Sales & Refunds</a></li>
             </ul>
             <div id='lower-footer' style={{backgroundColor:  props.color ? props.color : '#2D75E0'}}>
                 <p id='llc-text'>Seeking Serotonon LLC.</p>
