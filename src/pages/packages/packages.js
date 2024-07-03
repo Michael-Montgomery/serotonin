@@ -1,13 +1,15 @@
 import { useParams } from 'react-router-dom';
 import './packages.css';
-import Header from '../../../components/header/header';
-import packages from '../../../data/packages';
+import Header from '../../components/header/header';
+import packages from '../../data/packages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons/faArrowRightFromBracket';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Modal from 'react-modal';
-import PackageModal from '../../../components/packagemodal/packagemodal';
-import ShoppingCartBubble from '../../../components/shoppingCartBubble/shoppingCartBubble';
+import PackageModal from '../../components/packagemodal/packagemodal';
+import ShoppingCartBubble from '../../components/shoppingCartBubble/shoppingCartBubble';
+import { cartContext } from '../../context/cartContext';
+import Footer from '../../components/footer/footer';
 // import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -25,7 +27,13 @@ const customStyles = {
 
 
 
+
+
 function Packages() {
+
+    const cartFromContext = useContext(cartContext)
+
+    const [cart, setCart] = useState(cartFromContext)
 
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -57,9 +65,12 @@ function Packages() {
 
 
         <>
-            <Header color={gender === 'M' ? '#B2BEB5' : '#DB476E'}></Header>
+           <cartContext.Provider value={cart}>
+           <Header color={gender === 'M' ? '#B2BEB5' : '#DB476E'}></Header>
             <div id='packages-wrapper' style={{backgroundColor: gender === 'M' ? '#B2BEB5' : '#DB476E'}}>
-            <ShoppingCartBubble></ShoppingCartBubble>
+            {
+                cart.length > 0 ? <ShoppingCartBubble></ShoppingCartBubble> : <></>
+            }
                 <h2>Packages for {gender === 'M' ? 'Men' : 'Women'}</h2>
                 <ul id='packages-list'>
                     {
@@ -95,7 +106,10 @@ function Packages() {
                 {/* <p id='package-modal-close'><FontAwesomeIcon icon={faClose}></FontAwesomeIcon></p> */}
                 <PackageModal package={genderedData[selectedIndex]}></PackageModal>
             </Modal>
-        </>
+        
+           </cartContext.Provider>
+           <Footer color={gender === 'M' ? '#B2BEB5' : '#DB476E'}></Footer>
+           </>
     )
 }
 

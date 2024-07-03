@@ -20,13 +20,13 @@ function Header(props) {
 
     return (
        <>
-        <header style={{ height: responsiveHeaderExpanded ? '500px' : '70px', backgroundColor:  props.color}}>
+        <header style={{ height: responsiveHeaderExpanded ? '500px' : '70px', backgroundColor:  props.color ? props.color : '#2D75E0'}}>
             <nav>
-                <NavLink to='/'>Home</NavLink>
-                <Link onMouseEnter={handleShopMenu}>Shop</Link>
+                <NavLink to='/' style={{color: props.color ? 'white' : 'black'}}>Home</NavLink>
+                <Link onMouseEnter={handleShopMenu} style={{color: props.color ? 'white' : 'black'}}>Shop</Link>
                 <img alt='logo' src='https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1719705600&semt=sph'></img>
-                <NavLink to='/contact'>Contact</NavLink>
-                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/contact' style={{color: props.color ? 'white' : 'black'}}>Contact</NavLink>
+                <NavLink to='/about' style={{color: props.color ? 'white' : 'black'}}>About</NavLink>
                 {
                     responsiveHeaderExpanded ? <button className='responsive-menu-btn' onClick={handleResponsiveClick}><FontAwesomeIcon icon={faClose}></FontAwesomeIcon></button> : <button className='responsive-menu-btn' onClick={handleResponsiveClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
                 }
@@ -39,7 +39,7 @@ function Header(props) {
                         </li>
                         <li>
                             <Link to='/shop'>Shop</Link>
-                            <div id='mobile-shop-wrapper'>
+                            <div id='mobile-shop-wrapper' style={{backgroundColor:  props.color ? props.color : '#2D75E0'}}>
                                 <dl>
                                     <dt>Women</dt>
                                     <dd><Link to='/packages/F' onClick={handleResponsiveClick}>Packages</Link></dd>
@@ -61,7 +61,7 @@ function Header(props) {
             }
         </header>
        {
-        shopMenuExpanded ?  <div id='shop-header' style={{ height: shopMenuExpanded ? '40px' : 0, backgroundColor: props.color}}>
+        shopMenuExpanded ?  <div id='shop-header' style={{ height: shopMenuExpanded ? '40px' : 0, backgroundColor: props.color ? props.color : '#2d75e0'}}>
         <ul>
             <li>
                 <Link to='/packages/F'>Packages For Women</Link>

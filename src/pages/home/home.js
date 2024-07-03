@@ -1,3 +1,4 @@
+import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
 import './home.css';
 
@@ -6,6 +7,7 @@ function Home() {
         <>
         <Header></Header>
         <div id='welcome-picture-wrapper'></div>
+        <Footer></Footer>
         </>
     )
 }

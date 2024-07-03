@@ -1,0 +1,103 @@
+
+#checkout-wrapper {
+    padding-right: 45px;
+}
+
+#checkout-wrapper h2 {
+    text-align: center;
+}
+
+details {
+    margin-bottom: 30px;
+}
+
+summary {
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+#place-order-btn {
+    width: 668px;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+
+#cart-wrapper {
+    float: right;
+    /* position: absolute; */
+}
+
+#checkout-info-wrapper {
+    float: left;
+    padding-left: 45px;
+}
+
+#checkout-info-wrapper input, #checkout-info-wrapper select {
+    font-size: 1.5em;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+#checkout-info-wrapper select {
+    margin-right: 7px;
+}
+
+/* #billing-info-form input[type='checkbox'] {
+    font-size: 2em;
+} */
+
+.fName {
+    margin-right: 7px;
+}
+
+.fName, .lName {
+    width: 327px;
+}
+
+.address {
+    width: 668px;
+}
+
+.city {
+    width: 250px;
+    margin-right: 7px;
+}
+
+.zip {
+    width: 160px;
+}
+
+
+#cart-wrapper ul {
+    list-style-type: none;
+}
+
+.cart-item-wrapper {
+    width: 450px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+.cart-item-name {
+    display: inline;
+}
+
+.cart-item-price {
+    display: inline;
+    float: right;
+}
+
+.card-number {
+    width: 300px;
+    margin-right: 7px;
+}
+
+.card-expiry {
+    width: 125px;
+    margin-right: 7px;
+}
+
+.card-cvv {
+    width: 125px;
+}

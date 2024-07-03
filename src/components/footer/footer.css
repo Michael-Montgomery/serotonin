@@ -1,0 +1,36 @@
+#footer-wrapper {
+    height: 50px;
+}
+
+#footer-wrapper ul {
+    text-align: center;
+    /* display: none; */
+    list-style-type: none;
+    line-height: 50px;
+    margin: 0;
+}
+
+#footer-wrapper ul li {
+    display: inline;
+}
+
+#footer-wrapper ul li a {
+    margin: 0 4vw;
+    text-decoration: none;
+    color: white;
+}
+
+#lower-footer {
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+#llc-text {
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#site-credit-link {
+    float: right;
+}
