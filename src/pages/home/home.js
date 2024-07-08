@@ -6,7 +6,9 @@ function Home() {
     return(
         <>
         <Header></Header>
+        <div id='home-wrapper'>
         <div id='welcome-picture-wrapper'></div>
+        </div>
         <Footer></Footer>
         </>
     )

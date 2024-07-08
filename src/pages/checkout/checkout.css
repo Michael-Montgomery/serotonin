@@ -1,6 +1,7 @@
 
 #checkout-wrapper {
     padding-right: 45px;
+    padding-bottom: 70px;
 }
 
 #checkout-wrapper h2 {
@@ -16,10 +17,19 @@ summary {
     font-size: 1.6em;
 }
 
-#place-order-btn {
+#place-order-btn, #continue-shop-btn {
     width: 668px;
-    font-size: 1.4em;
+    font-size: 1.8em;
     margin-bottom: 50px;
+    color: #2D75E0;
+    background-color: white;
+    border: 2px solid #2D75E0;
+    transition: all .4s;
+}
+
+#place-order-btn:hover, #continue-shop-btn:hover {
+    background-color: #2D75E0;
+    color: white;
 }
 
 

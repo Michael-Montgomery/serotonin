@@ -1,0 +1,21 @@
+
+#contact-form-wrapper {
+    text-align: center;
+}
+
+#contact-form-wrapper input, #contact-form-wrapper textarea, #contact-form-wrapper select {
+    font-size: 1.9em;
+}
+
+.half {
+    width: 450px;
+    margin-bottom: 7px;
+}
+
+.half:first-child {}
+
+.full {
+    width: 70.5vw;
+    margin-bottom: 7px;
+}
+

@@ -1,5 +1,9 @@
 #footer-wrapper {
     height: 50px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer-wrapper ul {
@@ -8,6 +12,7 @@
     list-style-type: none;
     line-height: 50px;
     margin: 0;
+    padding-left: 0;
 }
 
 #footer-wrapper ul li {
@@ -29,8 +34,46 @@
     display: inline;
     text-align: center;
     margin: 0 auto;
+    color: white;
 }
 
 #site-credit-link {
     float: right;
+    text-decoration: none;
+    color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #footer-wrapper {
+        height: auto;
+        padding-top: 15px;
+    }
+
+    #footer-wrapper:not(#lower-footer) {
+        display: none;
+    }
+
+    #footer-wrapper ul li {
+        display: block;
+        margin: -15px;
+    }
+
+    #footer-wrapper ul li a {}
+  }

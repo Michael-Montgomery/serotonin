@@ -6,7 +6,7 @@ import { cartContext } from '../../context/cartContext';
 import { useContext, useState } from 'react';
 // import { faApplePay } from '@fortawesome/free-brands-svg-icons/faApplePay';
 import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons';
-// import Footer from '../../components/footer/footer';
+import Footer from '../../components/footer/footer';
 
 
 function Checkout() {
@@ -58,7 +58,7 @@ function Checkout() {
                 <div id='checkout-wrapper'>
                     <h2>Checkout</h2>
                     <div id='checkout-info-wrapper'>
-                        <button><FontAwesomeIcon icon={faCircleArrowLeft}></FontAwesomeIcon> Continue Shopping</button>
+                        <button id='continue-shop-btn'><FontAwesomeIcon icon={faCircleArrowLeft}></FontAwesomeIcon> Continue Shopping</button>
                         <details open>
                             <summary>Shipping Information</summary>
                             <form id='shipping-info-form'>
@@ -246,7 +246,7 @@ function Checkout() {
 
                 </div>
             </cartContext.Provider>
-            
+            <Footer></Footer>
         </>
     )
 }

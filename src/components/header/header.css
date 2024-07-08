@@ -18,13 +18,17 @@ header nav img {
 
 header nav a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2.6em;
     /* color: #624ADC;
      */
      color: white;
     margin: 0 4vw;
     padding: 0;
     transition: all .5s;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
 
 header nav a.active {
@@ -35,7 +39,7 @@ header nav a.active {
 header nav a:hover:not(.active) {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    padding: 7px 0;
+    padding: 4px 0;
 }
 
 .responsive-menu-btn {
@@ -49,6 +53,7 @@ header nav a:hover:not(.active) {
     transition: all .4s;
     position: sticky;
     top: 70px;
+    border-bottom: 1px solid white;
 }
 
 #shop-header ul {
@@ -105,7 +110,13 @@ header nav a:hover:not(.active) {
     }
 
     #responsive-menu-wrapper {
-        padding-top: 65px;
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    #responsive-menu-wrapper details {
+        color: white;
+        margin-bottom: -30px;
     }
 
     #responsive-menu-wrapper ul {
@@ -119,7 +130,7 @@ header nav a:hover:not(.active) {
     }
     
     #responsive-menu-wrapper ul li a {
-        font-size: 1.6em;
+        font-size: 1.8em;
         text-decoration: none;
         color: white;
         
@@ -131,7 +142,7 @@ header nav a:hover:not(.active) {
     }
 
     #mobile-shop-wrapper dd {
-        font-size: .8em;
+        font-size: .9em;
     }
 
     #mobile-shop-wrapper dl dt {

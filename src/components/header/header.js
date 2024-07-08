@@ -20,7 +20,7 @@ function Header(props) {
 
     return (
        <>
-        <header style={{ height: responsiveHeaderExpanded ? '500px' : '70px', backgroundColor:  props.color ? props.color : '#2D75E0'}}>
+        <header style={{ height: responsiveHeaderExpanded ? 'auto' : '70px', backgroundColor:  props.color ? props.color : '#2D75E0'}}>
             <nav>
                 <NavLink to='/'>Home</NavLink>
                 <Link onMouseEnter={handleShopMenu}>Shop</Link>
@@ -38,7 +38,11 @@ function Header(props) {
                             <Link to='/'>Home</Link>
                         </li>
                         <li>
-                            <Link to='/shop'>Shop</Link>
+                            {/* <Link to='/shop'>Shop</Link> */}
+                           <details>
+                            <summary>
+                            Shop
+                            </summary>
                             <div id='mobile-shop-wrapper' style={{backgroundColor:  props.color ? props.color : '#2D75E0'}}>
                                 <dl>
                                     <dt>Women</dt>
@@ -49,6 +53,7 @@ function Header(props) {
                                     <dd><Link>Items</Link></dd>
                                 </dl>
                             </div>
+                           </details>
                         </li>
                         <li>
                             <Link to='/contact'>Contact</Link>
