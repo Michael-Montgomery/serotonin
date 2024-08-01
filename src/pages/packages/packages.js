@@ -66,12 +66,13 @@ function Packages() {
 
         <>
            <cartContext.Provider value={cart}>
-           <Header color={gender === 'M' ? '#B2BEB5' : '#DB476E'}></Header>
-            <div id='packages-wrapper' style={{backgroundColor: gender === 'M' ? '#B2BEB5' : '#DB476E'}}>
+           <Header color={gender === 'M' ? '#5e5a5a' : '#5e5a5a'}></Header>
+            <div id='packages-wrapper' style={{backgroundColor: gender === 'M' ? '#bebebe' : '#e8c3c3'}}>
             {
                 cart.length > 0 ? <ShoppingCartBubble></ShoppingCartBubble> : <></>
             }
                 <h2>Packages for {gender === 'M' ? 'Men' : 'Women'}</h2>
+                
                 <ul id='packages-list'>
                     {
                         genderedData.map((val, idx) => {
@@ -80,15 +81,23 @@ function Packages() {
                                     <div className='package-wrapper' onClick={() => {
                                         setSelectedIndex(idx);
                                         openModal();
-                                    }} style={{backgroundColor: val.color}}>
-                                        <p className='package-title'>{val.title}</p>
-                                        <div className='package-thumbnail-wrapper' style={{ backgroundImage: `url(${val.imageLink})` }}></div>
-                                        <p className='package-price'>{`$${val.price}`}</p>
+                                    }} style={{backgroundColor: '#5e5a5a'}}>
+                                        {/* <p className='package-title' style={{color: val.color}}>{val.title}</p> */}
+                                        <div className='package-thumbnail-wrapper' style={{ backgroundImage: `url(${val.imageLink})` }}>
+                                        <div className='package-title-wrapper' style={{backgroundColor: val.color}}>
+                                        <p className='package-title' style={{color: val.color}}>{val.title}</p>
+                                        </div>
+
+                                       <div className='package-bottom-info-wrapper' style={{backgroundColor: val.color}}>
+                                       <p className='package-price'>{`$${val.price}`}</p>
                                         <div className='quick-buy-wrapper'>
                                             <ul className='package-options-list'>
                                                 <li><button onClick={() => alert('quick buy!')}>Quick Buy <FontAwesomeIcon icon={faArrowRightFromBracket}></FontAwesomeIcon></button></li>
                                             </ul>
                                         </div>
+                                       </div>
+                                        </div>
+                                        
                                     </div>
                                 </li>
                             )
@@ -108,7 +117,7 @@ function Packages() {
             </Modal>
         
            </cartContext.Provider>
-           <Footer color={gender === 'M' ? '#B2BEB5' : '#DB476E'}></Footer>
+           <Footer color={gender === 'M' ? '#5e5a5a' : '#5e5a5a'}></Footer>
            </>
     )
 }

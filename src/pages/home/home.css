@@ -1,6 +1,6 @@
 #welcome-picture-wrapper {
     width: 90vw;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 170px);
     background-image: url('https://images.pexels.com/photos/6246578/pexels-photo-6246578.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-size: cover;
     background-attachment: fixed;

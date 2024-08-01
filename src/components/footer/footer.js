@@ -2,7 +2,7 @@ import './footer.css';
 
 function Footer(props){
     return(
-        <div id='footer-wrapper' style={{backgroundColor: props.color ? props.color : '#2D75E0'}}>
+        <div id='footer-wrapper' style={{backgroundColor: props.color ? props.color : '#5e5a5a'}}>
             <ul>
                 <li><a href='http://www.apple.com'>Support</a></li>
                 <li><a href='http://www.apple.com'>Chakras Information</a></li>

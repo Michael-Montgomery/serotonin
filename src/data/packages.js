@@ -6,7 +6,7 @@ const packages = [
         gender: 'M',
         imageLink: 'https://images.pexels.com/photos/21619345/pexels-photo-21619345/free-photo-of-bouquet-of-pink-and-red-roses.jpeg?auto=compress&cs=tinysrgb&w=600',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#8b5e8f'
+        color: '#cb6ce6'
     },
     {
         title: 'Third Eye',
@@ -15,7 +15,7 @@ const packages = [
         gender: 'M',
         imageLink: 'https://images.pexels.com/photos/21619345/pexels-photo-21619345/free-photo-of-bouquet-of-pink-and-red-roses.jpeg?auto=compress&cs=tinysrgb&w=600',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#4B0082'
+        color: '#5e17eb'
     }, {
         title: 'Throat',
         price: 34.99,
@@ -23,7 +23,7 @@ const packages = [
         gender: 'M',
         imageLink: 'https://images.pexels.com/photos/21619345/pexels-photo-21619345/free-photo-of-bouquet-of-pink-and-red-roses.jpeg?auto=compress&cs=tinysrgb&w=600',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#ADD8E6'
+        color: '#05abc4'
     },
     {
         title: 'Heart',
@@ -41,7 +41,7 @@ const packages = [
         gender: 'M',
         imageLink: 'https://images.pexels.com/photos/21619345/pexels-photo-21619345/free-photo-of-bouquet-of-pink-and-red-roses.jpeg?auto=compress&cs=tinysrgb&w=600',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#E4D00A'
+        color: '#ffff00'
     }, {
         title: 'Sacral',
         price: 34.99,
@@ -66,7 +66,7 @@ const packages = [
         gender: 'F',
         imageLink: 'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#8b5e8f'
+        color: '#cb6ce6'
     },
     {
         title: 'Third Eye Chakra Package',
@@ -75,7 +75,7 @@ const packages = [
         gender: 'F',
         imageLink: 'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#4B0082'
+        color: '#5e17eb'
     },
     {
         title: 'Throat Chakra Package',
@@ -84,7 +84,7 @@ const packages = [
         gender: 'F',
         imageLink: 'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#ADD8E6'
+        color: '#05abc4'
     },
     {
         title: 'Heart Chakra Package',
@@ -102,7 +102,7 @@ const packages = [
         gender: 'F',
         imageLink: 'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         contents: ['2oz, soap bar', 'dry brush', 'sugar scrub', 'epsom salt', 'moisturizing oil', 'soap holder'],
-        color: '#E4D00A'
+        color: '#ffff00'
     },
     {
         title: 'Sacral',

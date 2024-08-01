@@ -3,6 +3,10 @@ header {
     transition: all .4s;
     position: sticky;
     top: 0;
+    padding: 0 5px;
+    -webkit-box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.75);
 }
 
 header nav {
@@ -10,25 +14,40 @@ header nav {
     line-height: 70px;
 }
 
-header nav img {
+#logo-header {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 2.5px;
+    border: 10px solid #5e5a5a;
+    transition: all .8s ease-in-out;
+    z-index: 999;
+}
+
+#logo-header:hover {
+    transform: rotate(360deg);
+}
+
+/* header nav img {
     height: 55px;
     width: 55px;
     display: none;
-}
+} */
 
 header nav a {
     text-decoration: none;
     font-size: 2.6em;
     /* color: #624ADC;
      */
-     color: white;
+    color: white;
     margin: 0 4vw;
     padding: 0;
     transition: all .5s;
     font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
 }
 
 header nav a.active {
@@ -37,8 +56,8 @@ header nav a.active {
 }
 
 header nav a:hover:not(.active) {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #d4bf79;
+    border-bottom: 1px solid #d4bf79;
     padding: 4px 0;
 }
 
@@ -49,11 +68,12 @@ header nav a:hover:not(.active) {
 #shop-header {
     background-color: var(--primary);
     margin-top: 0;
-    border-top: 1px solid white;
+    border-top: 1px solid #d4bf79;
     transition: all .4s;
     position: sticky;
     top: 70px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #d4bf79;
+    z-index: 2;
 }
 
 #shop-header ul {
@@ -69,7 +89,7 @@ header nav a:hover:not(.active) {
 
 #shop-header ul li a {
     text-decoration: none;
-    color: white;
+    color: #d4bf79;
     margin: 0 5vw;
     font-size: 1.4em;
 }
@@ -92,9 +112,8 @@ header nav a:hover:not(.active) {
         display: block;
     }
 
-    header {
-        
-    }
+    header {}
+
     header nav a {
         display: none;
     }
@@ -128,12 +147,12 @@ header nav a:hover:not(.active) {
     #responsive-menu-wrapper ul li {
         margin-top: 15px;
     }
-    
+
     #responsive-menu-wrapper ul li a {
         font-size: 1.8em;
         text-decoration: none;
         color: white;
-        
+
     }
 
     #mobile-shop-wrapper dl {
@@ -149,4 +168,4 @@ header nav a:hover:not(.active) {
         color: #ffbf00
     }
 
-  }
+}
