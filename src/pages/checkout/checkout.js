@@ -122,7 +122,20 @@ function Checkout() {
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
                                 </select>
-                                <input type='text' placeholder='Zip' className='zip' value={shippingZip} onChange={(e) => setShippingZip(e.target.value)}></input>
+                                <input type='text' placeholder='Zip' className='zip' value={shippingZip} onChange={(e) => {
+                                    setShippingZip(e.target.value);
+                                    if(shippingZip.length === 5) {
+                                        const fetchZip = async () => {
+                                            const response = await fetch(`https://api.zippopotam.us/us/${shippingZip}`);
+                                          const data = await response.json();
+                                          console.log(data);
+                                          setShippingCity(data.places[0]['place name']);
+                                          setShippingState(data.places[0]['state abbreviation'])
+                                        }
+                                        fetchZip();
+                                        
+                                    }
+                                }} maxLength={6}></input>
                             </form>
                         </details>
                         <details open>
