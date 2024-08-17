@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/serotonin/static/css/main.6b8195bb.css",
-    "main.js": "/serotonin/static/js/main.3aa8b4e8.js",
+    "main.js": "/serotonin/static/js/main.a4d04afb.js",
     "static/js/453.a51d2e39.chunk.js": "/serotonin/static/js/453.a51d2e39.chunk.js",
     "index.html": "/serotonin/index.html",
     "main.6b8195bb.css.map": "/serotonin/static/css/main.6b8195bb.css.map",
-    "main.3aa8b4e8.js.map": "/serotonin/static/js/main.3aa8b4e8.js.map",
+    "main.a4d04afb.js.map": "/serotonin/static/js/main.a4d04afb.js.map",
     "453.a51d2e39.chunk.js.map": "/serotonin/static/js/453.a51d2e39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b8195bb.css",
-    "static/js/main.3aa8b4e8.js"
+    "static/js/main.a4d04afb.js"
   ]
 }
