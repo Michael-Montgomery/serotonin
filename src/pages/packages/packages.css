@@ -44,14 +44,15 @@
 }
 
 .package-title {
-    font-size: 0;
-    color: white !important;
+    font-size: 2em;
+    color: transparent !important;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     margin-top: 0;
     /* font-weight: <weight>; */
     font-style: normal;
     transition: all .6s;
+
 }
 
 
@@ -104,7 +105,8 @@
 }
 
 .package-wrapper:hover .package-title {
-    font-size: 1.9em;
+    /* font-size: 1.9em; */
+    color: white !important;
 }
 
 .package-options-list {
