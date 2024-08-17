@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home';
 import Packages from './pages/packages/packages';
 import Contact from './pages/contact/contact';
@@ -11,7 +11,7 @@ import Giving from './pages/giving/giving';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/packages/:gender' element={<Packages></Packages>}></Route>
@@ -21,7 +21,7 @@ function App() {
       <Route path='/checkout' element={<Checkout></Checkout>}></Route>
       <Route path='/confirmation/:orderNumber' element={<Confirmation></Confirmation>}></Route>
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
