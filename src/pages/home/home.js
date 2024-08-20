@@ -3,13 +3,13 @@ import Header from '../../components/header/header';
 import './home.css';
 
 function Home() {
-    return(
+    return (
         <>
-        <Header></Header>
-        <div id='home-wrapper'>
-        <div id='welcome-picture-wrapper'></div>
-        </div>
-        <Footer></Footer>
+            <Header></Header>
+            <div id='home-wrapper'>
+                <div id='welcome-picture-wrapper'></div>
+            </div>
+            <Footer></Footer>
         </>
     )
 }
